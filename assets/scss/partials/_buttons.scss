@@ -1,0 +1,6 @@
+@mixin buttonInterpolation($property, $value){
+    $property: $value;
+}
+.button1{
+    @include buttonInterpolation('background-color', $firstColor);
+}

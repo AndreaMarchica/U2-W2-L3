@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+$font: "Roboto";
+body {
+    font-family: $font;}
+
+$smallFontSize : 12px;
+$mediumFontSize : 18px;
+$bigFontSize : 28px;
+
+@mixin titleStyle {
+    font-weight: 700;
+    color: blue;
+    padding: 2em;
+    font-size: $bigFontSize;
+
+}
+
+h1 {
+    @include titleStyle()
+}

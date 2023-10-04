@@ -1,0 +1,27 @@
+$textSpacings: 1em, 2em, 3em, 4em, 5em;
+@each $size in $textSpacings{
+    .padding-#{$size}{padding: $size}}
+@each $size in $textSpacings{
+    .margin-#{$size}{margin: $size}
+    .margin-top-#{$size}{margin-top: $size}
+    .margin-bottom-#{$size}{margin-bottom: $size}}
+    
+    $measures:10px, 20px, 30px, 50px, 80px, 100px, 200px, 300px, 500px;
+@each $size in $measures{
+    .width-#{$size}{width: $size}}
+
+    $display: block, inline-block, flex;
+    @each $type in $display{
+        .display-#{$type}{display: $type}}
+
+        $justifyContent: center, flex-end, flex-start, space-around, space-between;
+        @each $type in $justifyContent{
+            .display-#{$type}{justify-content: $type}}
+
+            $direction: row, column;
+            @each $type in $direction{
+                .display-#{$type}{flex-direction: $type}}
+
+                $alignItems: center, flex-end, flex-start, space-around, space-between;
+        @each $type in $alignItems{
+            .display-#{$type}{align-items: $type}}
